@@ -263,7 +263,7 @@ def run_detection_with_yolo(process_function, window_title):
             frame[y1:y2, x1:x2] = processed_crop
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
         cv2.imshow(window_title, frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):  # Ahora saldrá con "q"
+        if cv2.waitKey(1) & 0xFF == ord('q'): 
             break
     cap.release()
     cv2.destroyAllWindows()
